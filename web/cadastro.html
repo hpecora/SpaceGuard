@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceGuard | Cadastro de Alerta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topo">
+    <div class="logo">
+        <span class="logo-icon">🛰️</span>
+        <div>
+            <h1>SpaceGuard</h1>
+            <p>Monitoramento de desastres com dados de satélite</p>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <a href="index.html">Dashboard</a>
+        <a href="monitoramento.html">Monitoramento</a>
+        <a href="cadastro.html" class="ativo">Cadastrar Alerta</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="cabecalho-pagina">
+        <span class="tag">Novo alerta</span>
+        <h2>Cadastrar alerta ambiental</h2>
+        <p>
+            Preencha os dados abaixo para simular o registro de um alerta gerado
+            a partir do monitoramento por satélite.
+        </p>
+    </section>
+
+    <section class="form-card">
+        <form id="form-alerta">
+            <div class="grupo-form">
+                <label for="regiao">Região monitorada</label>
+                <input type="text" id="regiao" placeholder="Ex: Litoral Sul" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="Ex: Santos" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="tipo">Tipo de risco</label>
+                <select id="tipo" required>
+                    <option value="">Selecione</option>
+                    <option value="Enchente">Enchente</option>
+                    <option value="Queimada">Queimada</option>
+                    <option value="Desmatamento">Desmatamento</option>
+                    <option value="Tempestade">Tempestade</option>
+                </select>
+            </div>
+
+            <div class="grupo-form">
+                <label for="nivel">Nível de risco</label>
+                <select id="nivel" required>
+                    <option value="">Selecione</option>
+                    <option value="Baixo">Baixo</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Alto">Alto</option>
+                </select>
+            </div>
+
+            <div class="grupo-form">
+                <label for="satelite">Satélite responsável</label>
+                <input type="text" id="satelite" placeholder="Ex: Sentinel-2" required>
+            </div>
+
+            <div class="grupo-form">
+                <label for="descricao">Descrição do alerta</label>
+                <textarea id="descricao" rows="4" placeholder="Descreva o risco identificado..." required></textarea>
+            </div>
+
+            <button type="submit" class="botao">Cadastrar alerta</button>
+        </form>
+
+        <div id="mensagem-sucesso" class="mensagem-sucesso">
+            Alerta cadastrado com sucesso! Esta é uma simulação do protótipo Web.
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>SpaceGuard — Engenharia de Software | Global Solution 2026/1</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

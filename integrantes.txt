@@ -1,0 +1,10 @@
+Nome do grupo: SpaceGuard
+
+Projeto: SpaceGuard — Sistema de Monitoramento de Desastres com Dados de Satélite
+
+Integrantes:
+Henrique Pecora Vieira de Souza — RM571402
+Felipe Pizzinato Bigatto Garcia — RM573557
+
+Link do vídeo pitch:
+[Inserir link do vídeo aqui]
